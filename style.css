@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap');
+
 body {
     margin: 0;
     font-family: 'Alata', sans-serif;
@@ -196,7 +198,6 @@ width:20% !important;
 display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    padding: 20px;
 }
 
 /* stijl */
