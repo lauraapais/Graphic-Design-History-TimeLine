@@ -193,6 +193,15 @@ width:20% !important;
 }
 
 
+[type=futurism] .target {
+    width:27% !important;
+}
+
+[type=cubism] .target {
+    width:23% !important;
+}
+
+
 /* gen */
 [type=type_gen] {
 display: grid;

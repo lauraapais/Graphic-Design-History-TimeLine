@@ -196,7 +196,7 @@ function awakeLoad() {
             for (var j = 0; j < images[i].length; j++) {
 
                 if (images[i].type == "asian") {
-                    var randomWidth = getRandomNumber(40, 40);
+                    var randomWidth = 40;
                     images[i][j].style.width = randomWidth + "%";
                 } else if (images[i].type == "posters") {
                     var randomWidth = getRandomNumber(25, 25);
