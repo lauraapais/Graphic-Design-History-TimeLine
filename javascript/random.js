@@ -60,7 +60,7 @@ function awakeLoad() {
             screens[i].imagens_d = screens[i].getElementsByClassName("target");
             screens[i].addEventListener("click", function () {
                 this.top_pos=0;
-                this.eventInt=setInterval(digital_2, 300, this);
+                this.eventInt=setInterval(digital_2, 100, this);
                 for (var f = 0; f < this.imagens_d.length; f++) {
                     digital(this.imagens_d[f]);
                 }

@@ -237,6 +237,10 @@ display: grid;
     width:35% !important;
 }
 
+[type=digital] .plus .open-button{
+    z-index: 9999;
+}
+
 #glasgow_1{
     height: 75% !important;
     width:auto;
