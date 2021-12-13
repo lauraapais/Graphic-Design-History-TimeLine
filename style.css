@@ -237,8 +237,9 @@ display: grid;
     width:35% !important;
 }
 
-[type=digital] .plus {
-z-index:10000;
+#glasgow_1{
+    height: 75% !important;
+    width:auto;
 }
 
 /* renas */
