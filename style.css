@@ -202,6 +202,8 @@ width:20% !important;
 }
 
 
+
+
 /* gen */
 [type=type_gen] {
 display: grid;
@@ -233,6 +235,10 @@ display: grid;
 
 #digital_1{
     width:35% !important;
+}
+
+[type=digital] .plus {
+z-index:10000;
 }
 
 /* renas */
