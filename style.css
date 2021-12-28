@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap');
 
+* {
+
+}
+
 body {
     margin: 0;
     font-family: 'Alata', sans-serif;
@@ -29,6 +33,22 @@ img {
     box-shadow: -1px -1px 0px rgb(0 0 0 / 15%) inset, 10px 4px 10px rgb(0 0 0 / 10%), 40px 8px 10px rgb(0 0 0 / 0%)
 }
 
+[type=printing] {
+    cursor: url("img/stamp.png"), auto;
+}
+
+[type=german_book] {
+    cursor: url("img/stamp.png"), auto;
+}
+
+[type=type_mec] {
+    cursor: url("img/stamp.png"), auto;
+}
+
+[type=noveau] {
+    cursor: url("img/stamp.png"), auto;
+}
+
 [type=printing] .target{
     display: none;
 }
@@ -49,9 +69,19 @@ img {
     display: none;
 }
 
+#rebus{
+    box-shadow: none !important;
+}
+
+#cave{
+    box-shadow: none !important;
+}
+
 [type=type_mec] .target{
     display: none;
+    width:50% !important;
 }
+
 
 [type=photo_modern] .target{
     display: none;
@@ -122,51 +152,44 @@ img {
     grid-row: 2/2;
 }
 
-/* escrita */
-[type=escrit]{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-[type=escrit] .target{
-    position: unset !important;
-    height: 35%;
-    width: auto;
-    margin:2%;
+/* bau */
+[type=bau] .target{
+    box-shadow: none !important;
+    width: 30% !important;
 }
 
-/* bauhaus */
-#bau_1{
-    top:10%;
-    left:20%;
-}
-#bau_5{
-    top:10%;
-    left:20%;
-}
-#bau_3{
-    top:10%;
-    left:20%;
+/* poster */
+#poster_5{
+    top: 5%;
+    left: 70%;
 }
 
-#bau_2{
-    top:10%;
-    left:60%;
+#poster_4{
+    top: 25%;
+    left: 60%;
 }
 
-#bau_4{
-    top:50%;
-    left:50%;
+#poster_3{
+    top: 10%;
+    left: 30%;
 }
 
-#bau_6{
-    top:50%;
-    left:50%;
+#poster_2{
+    top: 20%;
+    left: 15%;
+}
+
+#poster_1{
+    top: 5%;
+    left: 5%;
+}
+
+
+#german_1{
+    width:35% !important;
 }
 
 /* ident */
-
 #ident_1{
     top:5%;
     left:5%;
@@ -186,6 +209,10 @@ img {
 #ident_5{
     top:10%;
     left:70%;
+}
+
+#5_1{
+    width:35%;
 }
 
 [type=ident] .target {
@@ -217,6 +244,11 @@ display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 1em;
+    justify-items: center;
+}
+
+[type=stijl] .target {
+    align-self: center;
 }
 
 /* const */
@@ -246,6 +278,13 @@ display: grid;
     width:auto;
 }
 
+[type=photo] .target{
+width:30% !important;
+}
+
+[type=photo_modern] .target{
+    width:30% !important;
+}
 /* renas */
 [type=renas] {
     position: relative;
@@ -418,6 +457,18 @@ display: grid;
     font-size: 5em;
 }
 
+#introdution .container .rect{
+    align-self: center;
+}
+
+#introdution .container .ellipse{
+    align-self: center;
+}
+
+#introdution .container h1{
+    align-self: center;
+}
+
 /* Páginas Informativas */
 
 .cor {
@@ -435,7 +486,7 @@ display: grid;
 }
 
 .obra .obra_img img {
-    width: 25vw;
+    width: 35vw;
 }
 
 .informacao {
@@ -444,12 +495,12 @@ display: grid;
 
 .obra .informacao p {
     font-family: "Roboto Light";
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin: 0;
 }
 
 .obra .informacao p:last-child {
-    font-size: 0.6em;
+    font-size: 0.8em;
     margin-top:2em;
 }
 
@@ -464,7 +515,7 @@ display: grid;
     width: 8em;
     height: 8em;
     position: absolute;
-    background-color: black;
+    background-color: #cec7c0;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     left: 50%;
@@ -476,7 +527,7 @@ display: grid;
     width: 8em;
     height: 8em;
     position: absolute;
-    background-color: black;
+    background-color: #cec7c0;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
@@ -506,14 +557,11 @@ display: grid;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    width: 70vw;
-    height: 70vh;
+    width: 100vw;
+    height: 100vh;
     transition: all 1s;
     z-index: 20000;
     overflow-y: scroll;
-    border-radius: 10px;
-    box-shadow: 5px 10px 50px #2b2d2c;
-    padding: 60px;
 }
 .vertical .info{
     background-color: #2b2d2c;
@@ -547,4 +595,9 @@ display: grid;
     left:0;
     position: absolute;
     z-index: -1;
+}
+.printer_background{
+    height:100%;
+    width: auto;
+    z-index: 3;
 }

@@ -36,12 +36,12 @@
     <!------------------------------------------------------------------------------------------------Pinturas rupestres-->
     <div type="cave_paintings" class="vertical">
         
-        <img class="target" src="img/1/1.jpg">
-        <img class="target" src="img/1/2.jpg">
-        <img class="target" src="img/1/Cavalo_Lascaux.jpg">
-        <img class="target" src="img/1/Bhimbetka_Rock_Shelters.jpg">
-        <img class="target" src="img/1/Serra_Capivara.jpg">
-        <img class="target" src="img/1/Ubirr.jpg">
+        <img class="target draggable" id="cave" src="img/1/1.png">
+        <img class="target draggable" src="img/1/2.jpg">
+        <img class="target draggable" src="img/1/Cavalo_Lascaux.jpg">
+        <img class="target draggable" src="img/1/Bhimbetka_Rock_Shelters.jpg">
+        <img class="target draggable" src="img/1/Serra_Capivara.jpg">
+        <img class="target draggable" src="img/1/Ubirr.jpg">
 
         <div class="plus">
             <div class="open-button">
@@ -59,7 +59,7 @@
                 </div>
                 <div class="obra">
                     <div class="obra_img">
-                        <img src="img/1/1.jpg">
+                        <img src="img/1/1_original.jpg">
                         <div class="ellipse"></div>
                     </div>
                     <div class="informacao">
@@ -140,7 +140,7 @@
         <img class="draggable target" src="img/2/sumerian.jpg">
         <img class="draggable target" src="img/2/Hieroglyphs.jpg">
         <img class="draggable target" src="img/2/clay_tablets.jpg">
-        <img class="draggable target" src="img/2/rebus.jpg">
+        <img class="draggable target" id="rebus" src="img/2/rebus.png">
         <img class="draggable target" src="img/2/hieroglifos.jpg">
 
         <div class="plus">
@@ -158,7 +158,6 @@
                 <div class="obra">
                     <div class="obra_img">
                         <img src="img/2/sumerian.jpg">
-                        <div class="ellipse"></div>
                     </div>
                     <div class="informacao">
                         <p>Sumerian Cuneiform, 3200 BC</p>
@@ -170,7 +169,6 @@
                 <div class="obra">
                     <div class="obra_img">
                         <img src="img/2/clay_tablets.jpg">
-                        <div class="ellipse"></div>
                     </div>
                     <div class="informacao">
                         <p>Clay Tablet with Sumerian Pictographs, 3100 BC</p>
@@ -181,7 +179,6 @@
                 <div class="obra">
                     <div class="obra_img">
                         <img src="img/2/Hieroglyphs.jpg">
-                        <div class="ellipse"></div>
                     </div>
                     <div class="informacao">
                         <p>Temple of Kom Ombo: Hieroglyphs</p>
@@ -192,7 +189,6 @@
                 <div class="obra">
                     <div class="obra_img">
                         <img src="img/2/hieroglifos.jpg">
-                        <div class="ellipse"></div>
                     </div>
                     <div class="informacao">
                         <p>Hieroglyphs</p>
@@ -202,8 +198,7 @@
                 </div>
                 <div class="obra">
                     <div class="obra_img">
-                        <img src="img/2/rebus.jpg">
-                        <div class="ellipse"></div>
+                        <img src="img/2/rebus_original.jpg">
                     </div>
                     <div class="informacao">
                         <p>Rebus</p>
@@ -368,7 +363,7 @@
     <div type="printing" class="vertical">
         <img class="draggable target" src="img/5/k.jpg">
         <img class="draggable target" src="img/5/São_Cristóvão.jpg">
-        <img class="draggable target" src="img/5/gutenberg.jpg">
+        <img id="5_1" class="draggable target" src="img/5/gutenberg.jpg">
         <img class="draggable target" src="img/5/Rationale_Divinorum.jpg">
         <img class="draggable target" src="img/5/Fust_Schoeffer.jpg">
         <img class="draggable target" src="img/5/BibliaPauperum.jpg">
@@ -463,7 +458,7 @@
     </div>
     <!--Livro Alemão-->
     <div type="german_book" class="vertical">
-        <img class="draggable target" src="img/6/nuremberg.jpg">
+        <img class="draggable target" id="german_1" src="img/6/nuremberg.jpg">
         <img class="draggable target" src="img/6/nuremberg_2.jpg">
         <img class="draggable target" src="img/6/Maria.jpg">
         <img class="draggable target" src="img/6/Underweisung_Messung.jpg">
@@ -977,8 +972,8 @@
                 </div>
                 <div class="obra">
                     <div class="obra_img">
-                        <img src="img/11/William_Morris.jpg">
                         <div class="ellipse"></div>
+                        <img src="img/11/William_Morris.jpg">
                     </div>
                     <div class="informacao">
                         <p>Acanthus Wallpaper, 1875</p>
@@ -1000,8 +995,8 @@
                 </div>
                 <div class="obra">
                     <div class="obra_img">
-                        <img src="img/11/Herbert_Horne.jpg">
                         <div class="ellipse"></div>
+                        <img src="img/11/Herbert_Horne.jpg">
                     </div>
                     <div class="informacao">
                         <p>The Angel with the Trumpet, 1884</p>
@@ -1575,7 +1570,6 @@
                 <div class="obra">
                     <div class="obra_img">
                         <img src="img/17/man_ray_3.jpg">
-                        <div class="ellipse"></div>
                     </div>
                     <div class="informacao">
                         <p>Rayograph, 1922</p>
@@ -1623,11 +1617,11 @@
     </div>
     <!--Cartaz como meio de comunicação-->
     <div type="posters" class="vertical">
-        <img class="target draggable" src="img/18/Julius_Klinger.jpg">
-        <img class="target draggable" src="img/18/Daddy_War.jpg">
-        <img class="target draggable" src="img/18/Leupin.jpg">
-        <img class="target draggable" src="img/18/Ludwig_Hohlwein.jpg">
-        <img class="target draggable" src="img/18/underground.jpg">
+        <img id="poster_1" class="target" src="img/18/Julius_Klinger.jpg">
+        <img id="poster_2" class="target" src="img/18/Daddy_War.jpg">
+        <img id="poster_3" class="target" src="img/18/Leupin.jpg">
+        <img id="poster_4" class="target" src="img/18/Ludwig_Hohlwein.jpg">
+        <img id="poster_5" class="target" src="img/18/underground.jpg">
 
 
         <div class="plus">
@@ -1917,12 +1911,12 @@
     </div>
     <!--Bauhaus-->
     <div type="bau" class="vertical">
-        <img id="bau_1" class="target draggable" src="img/21/joost.jpg">
-        <img id="bau_2" class="target draggable" src="img/21/Staatliches.jpg">
-        <img id="bau_3" class="target draggable" src="img/21/moholy-nagy-photogram.jpg">
-        <img id="bau_4" class="target draggable" src="img/21/light_games.jpg">
-        <img id="bau_5" class="target draggable" src="img/21/moholy-nagy.jpg">
-        <img id="bau_6" class="target draggable" src="img/21/universal.jpg">
+        <img class="target draggable" src="img/21/joost_1.png" data-src="21/joost">
+        <img class="target draggable" src="img/21/Staatliches_1.png" data-src="21/Staatliches">
+        <img class="target draggable" src="img/21/moholy-nagy-photogram_1.png" data-src="21/moholy-nagy-photogram">
+        <img class="target draggable" src="img/21/light_games_1.png" data-src="21/light_games">
+        <img class="target draggable" src="img/21/moholy-nagy_1.png" data-src="21/moholy-nagy">
+        <img class="target draggable" src="img/21/universal_1.png" data-src="21/universal">
 
 
         <div class="plus">
@@ -2169,15 +2163,15 @@
                 </div>
             </div>
         </div>
-        <img class="background" src="img/background/background_23.png">
+        <img class="background" src="img/background/background_23_1.png" data-src="background_23">
     </div>
     <!--Identidade corporativa e sistemas visuais-->
     <div type="ident" class="horizontal">
-        <img id="ident_1" class=" target" src="img/24/Giovanni_Pintori.jpg">
-        <img id="ident_2" class=" target" src="img/24/Giovanni_Pintori_2.jpg">
-        <img id="ident_3" class=" target" src="img/24/paul_rand.jpg">
-        <img id="ident_4" class=" target" src="img/24/CBS.jpg">
-        <img id="ident_5" class=" target" src="img/24/America.jpg">
+        <img id="ident_1" class=" target" src="img/24/Giovanni_Pintori_1_1.png" data-src="24/Giovanni_Pintori_1">
+        <img id="ident_2" class=" target" src="img/24/Giovanni_Pintori_2_1.png" data-src="24/Giovanni_Pintori_2">
+        <img id="ident_3" class=" target" src="img/24/paul_rand_1.png" data-src="24/paul_rand">
+        <img id="ident_4" class=" target" src="img/24/CBS_1.png" data-src="24/CBS">
+        <img id="ident_5" class=" target" src="img/24/America_1.png" data-src="24/America">
 
 
         <div class="plus">
@@ -2502,7 +2496,7 @@
     </div>
     <!--Revolução digital-->
     <div type="digital" class="vertical">
-        <div id="printer"> </div>
+        <div id="printer"> <img class="printer_background" src="img/background/background_28.png"> </div>
         <img class="target " src="img/28/Katherine_McCoy.jpg">
         <img class="target " src="img/28/Sunrise.jpg">
         <img id="digital_1" class="target " src="img/28/Susan.jpg">
