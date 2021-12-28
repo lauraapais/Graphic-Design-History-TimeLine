@@ -476,17 +476,18 @@ width:30% !important;
 }
 
 .obra {
-    display: flex;
+    display: block;
     margin: 5em 0 5em 5em;
 }
 
 .obra .obra_img {
     position: relative;
-    margin-right: 3em;
+    width: 35vw;
 }
 
 .obra .obra_img img {
     width: 35vw;
+    margin-bottom: 1.5em;
 }
 
 .informacao {
@@ -512,8 +513,8 @@ width:30% !important;
 }
 
 .obra .ellipse {
-    width: 8em;
-    height: 8em;
+    width: 10em;
+    height: 10em;
     position: absolute;
     background-color: #cec7c0;
     border-radius: 50%;
@@ -587,6 +588,15 @@ width:30% !important;
     color:#cec7c0;
 }
 
+.grelha{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+}
+
+.grelha .obra:nth-child(2n){
+    margin-top:20%;
+}
 
 .background{
     height:100%;
