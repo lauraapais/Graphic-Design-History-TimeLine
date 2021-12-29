@@ -1,7 +1,6 @@
 var images = Array();
 var winWidth = window.innerWidth;
 var winHeight = window.innerHeight;
-console.log(winWidth + "," + winHeight)
 
 var distance = Math.hypot(winWidth, winHeight);
 var angle = Math.atan2(winHeight, winWidth);
@@ -747,12 +746,10 @@ function futurism_click(imagem){
 
 function updatePosition(imagem) {
     if(Math.hypot(imagem.endX-imagem.currentX, imagem.endY-imagem.currentY)>5) {
-        console.log("hey");
         imagem.currentX = lerp(imagem.currentX, imagem.endX, 0.1);
         imagem.currentY = lerp(imagem.currentY, imagem.endY, 0.1);
         imagem.setAttribute("style", "transform: translate(" + imagem.currentX + "px," + imagem.currentY + "px);");
     } else {
-        console.log("xau");
         clearInterval(imagem.moveInteval);
     }
 }
